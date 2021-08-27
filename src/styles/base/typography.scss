@@ -1,0 +1,20 @@
+/* Typography styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&family=Roboto&display=swap');
+
+@mixin font-roboto() {
+    font-family: 'Roboto', sans-serif;
+}
+
+@mixin font-rampart() {
+    font-family: 'Rampart One', cursive;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @include font-rampart();
+}

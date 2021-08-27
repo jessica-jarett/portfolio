@@ -1,0 +1,13 @@
+/* Helper classes */
+
+.break-large {
+    @media (min-width: 1025px) {
+        display: block;
+    }
+}
+
+.break-small {
+    @media (max-width: 1024px) {
+        display: block;
+    }
+}
