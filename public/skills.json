@@ -1,0 +1,98 @@
+{
+    "languages": [
+        {
+            "id": 1,
+            "title": "CSS",
+            "image": "css.svg",
+            "description": "<p>My passion for web development started because of CSS. I am a CSS master, from obscure, unknown-by-most selectors, to the latest CSS3 advancements including flexbox and grid. Styling websites is where a lot of creativity comes in as a developer. It is like painting a picture for me. I write my CSS according to specificity rules that I have laid out in this <a>blog article</a>. I am always looking forward to the newest features of CSS, and am currently most looking forward to <a href='https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Masonry_Layout' rel='noreferrer' target='_blank'>masonry grid</a> support.</p>"
+          },
+          {
+              "id": 2,
+              "title": "Sass",
+              "image": "sass.svg",
+              "description": "<p>Behind CSS, Sass is my strongest skill as a Front-End Developer. I have worked in Less at SIDEARM Sports, but Sass exclusively at Bankers Healthcare Group. I write all my projects following the popular 7-1 pattern to keep code clean and organized, and believe in variablizing and writing mixins for any code that can be used more than once. Writing Sass is my idea of a fun day at work!</p>"
+          },
+          {
+              "id": 3,
+              "title": "HTML",
+              "image": "html.svg",
+              "description": "<p>I have worked in HTML since the Neopets and Myspace days of my youth. Today, I stress writing semantic HTML that allows for SEO and ADA Compliance. I believe HTML and class names should be written with meaning and consistency.</p>"
+          },
+          {
+              "id": 4,
+              "title": "JavaScript",
+              "image": "javascript.svg",
+              "description": "<p>I have worked almost exclusively in Vanilla JavaScript (no jQuery over here!) but the last 3 years. I have worked  in TypeScript in Angular projects but other than that I have used the latest JavaScript when needed.</p>"
+          },
+          {
+              "id": 5,
+              "title": "Vue",
+              "image": "vue.svg",
+              "description": "<p>In the last year at Bankers Healthcare Group I developed 2 websites using Vue.js and 1 application using the Vue CLI. I have additionally created this website using the Vue CLI.</p>"
+          },
+          {
+              "id": 6,
+              "title": "Angular",
+              "image": "angular.svg",
+              "description": "<p>I have 2 years of professional experience in Angular at Equitable (formerly AXA US) working on the myAXA application. This application was the online app that users logged into to pay their bill and apply for other products. Since then, I have stayed versed in Angular through mentoring junior developers at Bankers Healthcare Group and answering questions they have on their projects.</p>"
+          },
+          {
+              "id": 7,
+              "title": "Stencil/Web Components",
+              "image": "stencil.svg",
+              "description": "<p>I have built web components using the Stencil compiler at Bankers Healthcare Group. Web Components have grown in popularity in recent years over traditional frameworks (Vue, React, Angular), because they are cross-framework compatible, performant, and work out-of-the-box in legacy browsers.</p>"
+          },
+          {
+              "id": 8,
+              "title": "Symfony",
+              "image": "symfony.svg",
+              "description": "<p>Bankers Healthcare Group uses the Symfony framework for many of their public-facing websites. I have become familiar with the framework’s setup and its features, including Twig files and Routing/Controller setup.</p>"
+          }
+    ],
+    "other": [
+        {
+            "id": 9,
+            "title": "Git",
+            "image": "git.svg",
+            "description": "<p>At Bankers Healthcare Group, I work in a structured git branching workflow that allows for feature branches, bugfix branches, and development, staging, and production (main) branches. This workflow has kept all team code organized and in the right place for each release and need. I am well-versed in the git terminal commands.</p>"
+        },
+        {
+            "id": 10,
+            "title": "NPM",
+            "image": "npm.svg",
+            "description": "<p>I have experience publishing to NPM through a private repository and setting up a feed that developers at Bankers Healthcare Group needed to connect to before installing my package. I also am responsible for setting up the dependencies, scripts, and READ.me needed through each project through yarn or npm, depending on the project’s tech stack.</p>"
+        },
+        {
+            "id": 11,
+            "title": "ADA Compliance",
+            "image": "ada-compliance.svg",
+            "description": "<p>At SIDEARM Sports I was introduced to the growing field of ADA Development. Every website I wrote needed to conform to the AA Standards set by the World Wide Web Consortium. This included but was not limited to:</p><ul><li>Ensuring images had alternative text</li><li>Ensuring colors had sufficient contrast</li><li>Ensuring website was navigable by a screen reader and keyboard</li></ul><p>I have brought my knowledge of ADA Development to Bankers Healthcare Group and implemented those policies on all new development at the company.</p>"
+        },
+        {
+            "id": 12,
+            "title": "Component Development",
+            "image": "component-development.svg",
+            "description": "<p>At Bankers Healthcare Group I have worked on a component library and design system through the usage of Web Components and Storybook for documentation and testing. Component Frameworks need to be well-written and documented to cover all use cases and ensure easy adoption by other developers. I have learned a lot recently by creating and sharing a component framework through NPM with other developers at BHG that included fonts, icons, logos, and testimonials components.</p>"
+        },
+        {
+            "id": 13,
+            "title": "Responsive Development",
+            "image": "responsive-development.svg",
+            "description": "<p>I tackle all projects with a mobile-first mentality. I follow minimal breakpoints for the design at hand, but always including mobile, tablet, and desktop sizes. I have found that coding mobile first simplifies your CSS/Sass upfront because mobile designs are often the simplest versions. The mobile-first approach keeps code lean and organized throughout the process by adding complexity as you move forward in the project. I keep responsive breakpoints nested within each parent selector, so all responsive code is in one place, per element.</p>"
+        },
+        {
+            "id": 14,
+            "title": "Public Speaking",
+            "image": "public-speaking.svg",
+            "description": "<p>I have extensive experience in public speaking in the workplace. In 2017, I was awarded the Competent Communicator certification by Toastmasters International, and in 2018, I became the President of my local club.</p><p>During employment at SIDEARM Sports, I mentored and coached developers at the company on public speaking so that they can gain the skills and confidence they needed to join client calls.</p>"
+        },
+        {
+            "id": 15,
+            "title": "Agile",
+            "image": "agile.svg",
+            "description": "<p>The first company I worked for was an early adopter of the Scrum and Agile methodologies. Because of this, I have had extensive experience by participating in Agile ceremonies throughout different organizations. I understand that not one company does Agile the same through this experience. I have worked in Kanban and Scrum, and Azure Boards and Jira.</p>" 
+        }
+    ]
+}
+    
+    

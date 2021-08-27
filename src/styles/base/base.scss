@@ -4,6 +4,11 @@ html {
     @include font-roboto();
     font-size: 16px;
     line-height: 1.5;
+    color: $palette-dark;
+}
+
+body {
+    overflow-x: hidden;
 }
 
 .row {
@@ -13,11 +18,22 @@ html {
 }
 
 a {
-    text-decoration: underline;
+    color: $palette-dark;
+    text-decoration: none;
     
     &:hover {
-        text-decoration: none;
+        text-decoration: underline;
     }
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+button,
+.button  {
+    @include button;
 }
 
 ::selection {

@@ -4,9 +4,6 @@ import About from '@/pages/About.vue';
 import Experience from '@/pages/Experience.vue';
 import ExperienceDetail from '@/pages/ExperienceDetail.vue';
 import Skills from '@/pages/Skills.vue';
-import BlogPost from '@/pages/BlogPost.vue';
-import Contact from '@/pages/Contact.vue';
-
 
 const routes = [
 	{
@@ -24,16 +21,16 @@ const routes = [
 		name: 'Experience',
 		component: Experience,
 	},
+	{
+		path: '/featured-experience/:slug',
+		name: 'ExperienceDetail',
+		component: ExperienceDetail
+	},
     {
 		path: '/skills',
 		name: 'Skills',
 		component: Skills,
-	},
-    {
-		path: '/contact',
-		name: 'Contact',
-		component: Contact,
-	},
+	}
 ];
 
 const router = createRouter({

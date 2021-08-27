@@ -17,7 +17,13 @@ $gradient-bottom-left: linear-gradient(315deg, $palette-opal, $palette-steel-tea
 $gradient-radial: radial-gradient($palette-opal, $palette-steel-teal, $palette-rifle-green, $palette-dutch-white, $palette-antique-brass);
 
 /* Palette App Variables */
+$palette-primary: $palette-steel-teal;
+$palette-accent: $palette-opal;
+$palette-highlight: $palette-antique-brass;
+$palette-dark: $palette-rifle-green;
+$palette-light: $palette-dutch-white;
 
 /* Other App Variables */
 $app-border-radius: 4px;
 $app-max-width: 850px;
+$app-z-index-modal: 99;

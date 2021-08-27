@@ -15,10 +15,10 @@
                         <router-link to="/skills">Skills</router-link>
                     </li>
                     <li>
-                        <router-link to="/blog">Blog</router-link>
+                        <router-link to="/#contact">Contact</router-link>
                     </li>
                     <li>
-                        <router-link to="/contact">Contact</router-link>
+                        <a href="https://github.com/jessica-jarett/portfolio" rel="noreferrer" target="_blank">Github</a>
                     </li>
                 </ul>
             </nav>
@@ -44,6 +44,7 @@
         .headroom {
             will-change: transform;
             transition: transform 200ms linear;
+            background: transparentize($color: $palette-accent, $amount: .75);
         }
         .headroom--pinned {
             transform: translateY(0%);
@@ -54,6 +55,8 @@
     }
 
     nav {
+        padding: 25px 0;
+
         ul {
             @include reset-list();
             text-align: right;
@@ -61,10 +64,12 @@
             li { 
                 margin: 0 25px;
 
-                router-link {
+                a {
                     position: relative;
                     display: block;
                     cursor: pointer;
+                    text-decoration: none;
+                    color: $palette-dark;
 
                     &::after {
                         content: '';
@@ -75,10 +80,12 @@
                         position: absolute;
                         transform: translateX(-50%);
                         transition: .25s ease-in-out;
-                        background: $palette-antique-brass;
+                        background: $palette-highlight;
                     }
 
                     &:hover {
+                        text-decoration: none;
+                        
                         &::after {
                             width: 100%;
                         }

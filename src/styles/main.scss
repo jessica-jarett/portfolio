@@ -2,10 +2,10 @@
 @import 'abstracts/variables';
 @import 'abstracts/mixins';
 
+// Components 
+@import 'components/button';
+
 // Base
 @import 'base/typography.scss';
 @import 'base/base.scss';
 @import 'base/helpers.scss';
-
-// Components 
-@import 'components/button';

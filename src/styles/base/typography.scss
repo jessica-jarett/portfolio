@@ -17,4 +17,21 @@ h4,
 h5,
 h6 {
     @include font-rampart();
+    margin: 0 0 25px 0;
+}
+
+h1 {
+    font-size: 36px;
+    
+    @media (min-width: 1025px) {
+        font-size: 36px;
+    }
+}
+
+h2 {
+    font-size: 26px;
+    
+    @media (min-width: 1025px) {
+        font-size: 26px;
+    }
 }
