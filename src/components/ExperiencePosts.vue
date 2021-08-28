@@ -82,7 +82,7 @@
 
             .experience-post {
                 &__title {
-                    font-size: 20px;
+                    font-size: 1.25rem;
                     font-weight: 600;
                     margin-bottom: 25px;
                 }
@@ -96,7 +96,7 @@
                     align-items: center;
                     justify-content: center;
                     border-radius: 16px;
-                    font-size: 18px;
+                    font-size: 1.12rem;
                     padding: 0 10px;
                 }
 

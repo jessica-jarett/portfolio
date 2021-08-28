@@ -119,7 +119,7 @@ const images = require.context('@/assets/images/skills/')
             }
 
             &__title {
-                font-size: 24px;
+                font-size: 1.5rem;
                 font-weight: 600;
                 margin-bottom: 25px;
             }

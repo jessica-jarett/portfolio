@@ -62,7 +62,7 @@
 
 <script>
     import ExperiencePosts from '@/components/ExperiencePosts.vue';
-
+    import Contact
     export default {
         name: 'Home',
         components: {

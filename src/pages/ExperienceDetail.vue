@@ -105,7 +105,7 @@
             align-items: center;
             justify-content: center;
             border-radius: 16px;
-            font-size: 18px;
+            font-size: 1.12rem;
             padding: 0 10px;
         }
 

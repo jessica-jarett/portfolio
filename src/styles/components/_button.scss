@@ -10,7 +10,7 @@
     padding: 12.5px 25px;
     position: relative;
     top: 0;
-    transition: .25s ease-in-out;
+    transition: .25s ease-in-out; 
 
     &:hover {
         background: darken($palette-primary, 5%);

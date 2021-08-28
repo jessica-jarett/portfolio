@@ -27,7 +27,7 @@
         background: white;
 
         &__title {
-            font-size: 20px;
+            font-size: 1.25rem;
             font-weight: 600;
             margin-bottom: 25px;
         }
