@@ -29,8 +29,7 @@
             <div class="row">
                 <h2>Contact Me</h2>
 
-                <div class="flex">
-                </div>
+                <contact />
             </div>
         </section>
 
@@ -62,11 +61,13 @@
 
 <script>
     import ExperiencePosts from '@/components/ExperiencePosts.vue';
-    import Contact
+    import Contact from '@/components/Contact.vue';
+
     export default {
         name: 'Home',
         components: {
-            ExperiencePosts
+            ExperiencePosts,
+            Contact
         }
     }
 </script>

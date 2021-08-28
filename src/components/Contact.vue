@@ -18,19 +18,15 @@
         ></v-text-field>
       </v-flex>
       <v-flex xs12 offset-md6 md6 text-xs-right>
-        <v-btn color="primary" @click="validateAndSubmit">Submit</v-btn>
+        <button class="button" @click="validateAndSubmit">Submit</button>
       </v-flex>
     </v-layout>
   </v-form>
 </template>
 
-<script>
-  import Vue from "vue";
-  import { VueReCaptcha } from "vue-recaptcha-v3";
-  
-  Vue.use(VueReCaptcha, { siteKey: "your-google-recaptcha-site-key" });
-
+<script>  
   export default {
+    name: 'Contact',
     data() {
       return {
         valid: true,
@@ -41,12 +37,12 @@
       validateAndSubmit() {
         if (this.$refs.form.validate()) {
           this.disableSubmit = true;
-          this.$recaptcha("contactus").then((token) => {
+          this.$recaptcha("contactus").then(() => {
             this.parseContactInfo(this.contactDetail);
             // parse & store data. Method can be housed in Vuex store
             // show confirmation message
 
-            router.push("/");
+            this.router.push("/");
             // navigate to home page after processing  data
           });
         }
