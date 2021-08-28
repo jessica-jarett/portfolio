@@ -9,9 +9,9 @@
 
                     <p>Thank you for visiting my page!</p>
 
-                    <p>I’m currently relocating across the country to Portland, Oregon, and am searching for remote opportunities based in the Pacific Northwest.</p>
+                    <p>Here you will find some of my work examples, and a link to my Github to view the source code of this project. If you are interested in collaborating, please contact me using the form below.</p>
 
-                    <a class="button" target="_blank" href="Resume-JJarett.pdf">
+                    <a class="button" target="_blank" href="Resume.pdf">
                         Download Resume
                     </a>
                 </div>
@@ -27,7 +27,10 @@
         <section class="contact">
             <a name="contact"></a>
             <div class="row">
-                <h2>Contact Information</h2>
+                <h2>Contact Me</h2>
+
+                <div class="flex">
+                </div>
             </div>
         </section>
 
@@ -73,6 +76,7 @@
         .hero {
             @media (min-width: 1025px) { 
                 height: calc(100vh - 74px);
+                padding-top: 74px;
             }
 
             .row {
@@ -85,6 +89,14 @@
             &__left {
                 @media (min-width: 1025px) {
                     margin-right: 25px;
+
+                    h1 {
+                        margin-bottom: 25px;
+                    }
+
+                    a {
+                        margin-top: 12.5px;
+                    }
                 }
             }
 
@@ -115,7 +127,16 @@
         .contact {
             padding: 50px 0;
             margin: 50px 0;
+            text-align: center;
             background: transparentize($palette-accent, .75);
+
+            &-info {
+                margin-top: 50px;
+
+                h3 {
+                    margin-bottom: 5px;
+                }
+            }
         }
 
         /* Not finished yet -- will add later 

@@ -1,27 +1,33 @@
 <template>
     <header>
         <div class="row">
-            <nav>
-                <div class="mobile-only hamburger"></div>
+            <div class="flex justify-space-between align-center">
+                <router-link to="/">
+                    <img src="@/assets/images/logos/logo.png" width=50 alt="Go home" /> 
+                </router-link>
 
-                <ul>    
-                    <li>
-                        <router-link to="/about">About</router-link>
-                    </li>
-                    <li>
-                        <router-link to="/featured-experience">Featured Experience</router-link>
-                    </li>
-                    <li>
-                        <router-link to="/skills">Skills</router-link>
-                    </li>
-                    <li>
-                        <router-link to="/#contact">Contact</router-link>
-                    </li>
-                    <li>
-                        <a href="https://github.com/jessica-jarett/portfolio" rel="noreferrer" target="_blank">Github</a>
-                    </li>
-                </ul>
-            </nav>
+                <nav>
+                    <div class="mobile-only hamburger"></div>
+
+                    <ul>    
+                        <li>
+                            <router-link to="/about">About</router-link>
+                        </li>
+                        <li>
+                            <router-link to="/featured-experience">Featured Experience</router-link>
+                        </li>
+                        <li>
+                            <router-link to="/skills">Skills</router-link>
+                        </li>
+                        <li>
+                            <router-link to="/#contact">Contact</router-link>
+                        </li>
+                        <li>
+                            <a href="https://github.com/jessica-jarett/portfolio" rel="noreferrer" target="_blank">Github</a>
+                        </li>
+                    </ul> 
+                </nav>
+            </div>
         </div>
     </header> 
 </template>
@@ -44,14 +50,24 @@
         .headroom {
             will-change: transform;
             transition: transform 200ms linear;
-            background: transparentize($color: $palette-accent, $amount: .75);
         }
+
         .headroom--pinned {
             transform: translateY(0%);
         }
+
         .headroom--unpinned {
             transform: translateY(-100%);
         }
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: $app-z-index-header;
+        background: white;
     }
 
     nav {
@@ -74,7 +90,7 @@
                     &::after {
                         content: '';
                         left: 50%;
-                        bottom: 0;
+                        bottom: -5px;
                         height: 2px;
                         width: 0;
                         position: absolute;

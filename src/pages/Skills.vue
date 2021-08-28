@@ -86,7 +86,7 @@ const images = require.context('@/assets/images/skills/')
          }
 
          .skill {
-            background-color: transparentize($color: $palette-accent, $amount: .75);
+            background-color: transparentize($color: $palette-accent, $amount: .85);
             box-shadow: -4px 4px 10px rgba(150, 187, 187, 0.5);
             width: calc(25% - 25px);
             height: 212px;
