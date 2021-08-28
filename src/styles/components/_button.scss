@@ -16,6 +16,7 @@
 
     &:hover {
         background: darken($palette-primary, 5%);
+        cursor: pointer;
     }
 
     &:active {

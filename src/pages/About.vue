@@ -6,10 +6,10 @@
             <h2>Introduction</h2>
 
             <div class="image">
-                <img src="@/assets/images/about/jess-tree.jpg" alt="About Jess Jarett" />
+                <img :src="tree" width="346" height=428 alt="About Jess Jarett" />
             </div>
 
-            <p>My name is Jess, and I’m a Front-End Web Developer with 7 years of professional experience working for 3 companies in the Syracuse, NY area. I’m currently relocating to Portland, OR and am very interested in becoming part of a team at a West-coast based company.</p>
+            <p>My name is Jess, and I’m a Front-End Web Developer with 7 years of professional experience working for 3 companies in the Syracuse, NY area.</p>
 
             <p>My passion for development goes back to when I was a pre-teen, spending a lot of my free time on Neopets. Neopets was virtual pet website that gave each of its users their own personal hosted website. I quickly taught myself the well-known HTML elements and used my free website to teach other player’s how to code. Fast-forward 6 years and I was in high school making myspace layouts for all of my friends and taking 4 years of web design classes. Little did I know that my hobby would help prepare me for a future career.</p>
            
@@ -23,7 +23,7 @@
 
             <h2>My hobbies</h2>
 
-            <p>I fell in love with the Pacific Northwest after working remotely in Portland for two months. Every day after work I would find a fantastic hike within an hour’s drive and life felt like a vacation.</p>
+            <p>My favorite pasttime is hiking. I have spent a few months this last year remotely working from various locations in the Western United States and would spend my afternoons hiking in the Cascades or the Rockies. Every day after work I would find a fantastic hike within an hour’s drive and life felt like a vacation.</p>
 
             <p>Other hobbies of mine include cooking, slow-jogging, and reading a good non-fiction book.</p>
         </div>
@@ -33,6 +33,11 @@
 <script>
     export default {
         name: 'About',
+        data() {
+            return {
+                tree: require('@/assets/images/about/jess-tree.jpg')
+            }
+        },
     }
 </script>
 
@@ -44,9 +49,21 @@
              border-radius: $app-border-radius;
              position: relative;
              display: block;
-             float: right;
-             margin-left: 50px;
-             margin-bottom: 80px;
+
+             @media (max-width: 450px) {
+                 width: 100%;
+                 margin: 50px 0 25px 0;
+
+                 img {
+                     width: 100%;
+                 }
+             }
+
+             @media (min-width: 451px) {
+                float: right;
+                margin-left: 50px;
+                margin-bottom: 80px;
+             }
 
              &::after {
                 content: '';

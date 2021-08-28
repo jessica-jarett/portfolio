@@ -7,7 +7,7 @@
 
                     <div class="experience-detail__top">
                         <div class="experience-detail__image">
-                            <img v-bind:src="loadImg(experienceDetail.image)" v-bind:alt="experienceDetail.title" />
+                            <img v-bind:src="loadImg(experienceDetail.image)" width=246 height=180 v-bind:alt="experienceDetail.title" />
                         </div>
 
                         <div> 
@@ -23,7 +23,7 @@
                                 </div>
                             </div>
 
-                             <div class="flex align-center">
+                             <div class="experience-detail__flex flex align-center">
                                 <div class="experience-detail__year">{{experienceDetail.year}}</div>
                                 <div class="experience-detail__tag">{{experienceDetail.tag}}</div>
                             </div>
@@ -69,9 +69,14 @@
 
         &__top {
             display: flex;
+            flex-direction: column;
             border-bottom: 1px solid $palette-dark;
             padding-bottom: 50px;
             margin-bottom: 50px;
+
+            @media (min-width: 451px) {
+                flex-direction: row;
+            }
         }
 
         &__title {
@@ -79,20 +84,45 @@
         }
 
         &__image {
-            margin-right: 50px;
+            @media (max-width: 450px) {
+                img {
+                    width: 100%;
+                }
+            }
+
+            @media (min-width: 451px) {
+                margin-right: 50px;
+            }
         }
 
         &__tech, &__website {
             margin-bottom: 25px;
+            flex-direction: column;
+
+            @media (min-width: 451px) {
+                flex-direction: row;
+            }
 
             h3 {
-                margin-right: 12.5px;
-                margin-top: -7px;
+                margin-bottom: 5px;
+
+                @media (min-width: 451px) {
+                    margin-right: 12.5px;
+                    margin-top: -7px;
+                }
             }
 
             * {
-                margin-bottom: 0;
-                line-height: 1;
+                @media (min-width: 451px) {
+                    margin-bottom: 0;
+                    line-height: 1;
+                }
+            }
+        }
+
+        &__flex {
+            @media (max-width: 450px) {
+                justify-content: center;
             }
         }
 

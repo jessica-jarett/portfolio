@@ -2,12 +2,12 @@
     <div>
         <div class="experience-post" v-for="experience in experienceList" :key="experience.id">
             <div class="experience-post__image">
-                <img v-bind:src="loadImg(experience.image)" v-bind:alt="experience.title" />
+                <img v-bind:src="loadImg(experience.image)" width=246 height=180 v-bind:alt="experience.title" />
             </div>
             <div class="experience-post__detail">
                 <div class="experience-post__title">{{experience.title}}</div>
 
-                <div class="flex align-center">
+                <div class="experience-post__flex flex align-center">
                     <div class="experience-post__year">{{experience.year}}</div>
                     <div class="experience-post__tag">{{experience.tag}}</div>
                 </div>
@@ -54,17 +54,29 @@
         margin: 50px 0;
         padding-bottom: 50px;
 
+        @media (max-width: 450px) {
+            flex-direction: column;
+        }
+
         &:not(:last-of-type) {
             border-bottom: 1px solid $palette-dark;
         }
 
         &__image {
-            width: 246px;
-            height: 180px;
-            background-color: $palette-light;
             background-size: cover;
             background-position: center;
             border-radius: $app-border-radius;
+
+            @media (min-width: 451px) {
+                width: 246px;
+                height: 180px;
+            }
+
+            img {
+                @media (max-width: 450px) {
+                    width: 100%;
+                }
+            }
         }
 
         &__link {
@@ -75,16 +87,34 @@
             }
         }
 
+        &__flex {
+            @media (max-width: 450px) {
+                margin: 12.5px 0 25px 0;
+            }
+        }
+
         &__detail {
-            @media (min-width: 1025px) {
+            margin-top: 25px;
+
+            @media (min-width: 451px) {
                 margin-left: 25px;
+                margin-top: 0;
+            }
+
+            .flex {
+                @media (max-width: 450px) {
+                    flex-direction: row;
+                }
             }
 
             .experience-post {
                 &__title {
                     font-size: 1.25rem;
                     font-weight: 600;
-                    margin-bottom: 25px;
+
+                    @media (min-width: 451px) {
+                        margin-bottom: 25px;
+                    }
                 }
 
                 &__year {
@@ -101,7 +131,9 @@
                 }
 
                 &__description {
-                    margin-top: 25px;
+                    @media (min-width: 451px) {
+                        margin-top: 25px;
+                    }
                 }
             } 
         }

@@ -86,9 +86,6 @@ const images = require.context('@/assets/images/skills/')
          }
 
          .skill {
-            background-color: transparentize($color: $palette-accent, $amount: .85);
-            box-shadow: -4px 4px 10px rgba(150, 187, 187, 0.5);
-            width: calc(25% - 25px);
             height: 212px;
             position: relative;
             margin: 12.5px;
@@ -96,6 +93,17 @@ const images = require.context('@/assets/images/skills/')
             cursor: pointer;
             position: relative;
             top: 0;
+            background-color: transparentize($color: $palette-accent, $amount: .85);
+            box-shadow: -4px 4px 10px rgba(150, 187, 187, 0.5);
+            width: 100%;
+
+            @media (min-width: 600px) {
+                width: calc(50% - 25px);
+            }
+            
+            @media (min-width: 1025px) {
+                width: calc(25% - 25px);
+            }
             
             &:hover {
                 background-color: transparentize($color: $palette-accent, $amount: .5);
@@ -116,6 +124,7 @@ const images = require.context('@/assets/images/skills/')
                 left: 50%;
                 top: 50%;
                 transform: translate(-50%, -50%);
+                pointer-events: none;
             }
 
             &__title {
@@ -132,22 +141,27 @@ const images = require.context('@/assets/images/skills/')
                  max-width: $app-max-width;
                  background: white;
                  z-index: $app-z-index-modal;
-                 left: 50%;
-                 top: 50%;
-                 transform: translate(-50%, -50%);
                  padding: 25px;
                  box-shadow: -1px 4px 10px rgba(0, 0, 0, 0.25);
+                 top: 0;
+                 left: 0;
+                 height: 100vh;
+                 width: auto;
 
                  @media (min-width: 1025px) {
-                     width: $app-max-width;
+                    width: $app-max-width;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    height: auto;
                  }
 
                  &-close {
-                     position: absolute;
-                     right: 25px;
-                     top: 25px;
-                     width: 25px;
-                     height: 25px;
+                    position: absolute;
+                    right: 25px;
+                    top: 25px;
+                    width: 25px;
+                    height: 25px;
                     background-size: cover;
                     background-image: url('../assets/images/icons/close.svg');
 

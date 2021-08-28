@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="hero__left">
                     <h1>
-                        Hi, I'm Jess, <span class="break-large">Front-End Web Developer</span>
+                        Hi, I'm Jess, <span class="break-small break-large">Front-End Web Developer</span>
                     </h1>
 
                     <p>Thank you for visiting my page!</p>
@@ -18,8 +18,8 @@
 
                 <div class="hero__right">
                     <div class="image">
-                        <img src="@/assets/images/home/jess.png" alt="Jess Jarett" />
-                    </div>
+                        <img :src="imgJess" width=266 height=266 alt="Jess Jarett" />
+                    </div> 
                 </div>
             </div>
         </section>
@@ -32,22 +32,6 @@
                 <contact />
             </div>
         </section>
-
-         <!-- Not finished -- will add later
-        <section class="blog-posts">
-            <div class="row">
-                <div class="flex justify-space-between">
-                    <h2>Blog posts</h2>
-
-                    <router-link to="/blog">View all</router-link>
-                </div>
-
-                <div class="blog-posts__container">
-                    <blog-card />
-                    <blog-card />
-                </div>
-            </div>
-        </section>-->
 
         <section class="experience-posts">
             <div class="row">
@@ -68,6 +52,11 @@
         components: {
             ExperiencePosts,
             Contact
+        },
+        data() {
+            return {
+                imgJess: require('@/assets/images/home/jess.png')
+            }
         }
     }
 </script>
@@ -75,21 +64,35 @@
 <style lang="scss"> 
     .home-page {
         .hero {
+            padding-top: 75px;
+
             @media (min-width: 1025px) { 
                 height: calc(100vh - 74px);
+                min-height: 500px;
+                max-height: 500px;
                 padding-top: 74px;
             }
 
             .row {
                 display: flex;
-                justify-content: space-between;
-                align-items: center;
-                height: 100%;
+                flex-direction: column-reverse;
+                text-align: center;
+
+                @media (min-width: 1025px) {
+                    text-align: left;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    height: 100%;
+                }
             }
 
             &__left {
+                margin-top: 25px;
+
                 @media (min-width: 1025px) {
                     margin-right: 25px;
+                    margin-top: 0;
 
                     h1 {
                         margin-bottom: 25px;
@@ -113,13 +116,25 @@
                     &::after {
                         content: '';
                         position: absolute;
-                        top: 5px;
-                        left: -5px;
                         background: transparentize($palette-accent, .75);
                         border-radius: 50%;
-                        width: 100%;
-                        height: 100%;
+                        width: 266px;
+                        height: 266px;
                         z-index: -1;
+                        top: 12px;
+                        left: 12px;
+
+                        @media (min-width: 451px) and (max-width: 1024px) {
+                            left: 50%;
+                            transform: translateX(-140px);
+                        }
+
+                        @media (min-width: 1025px) {
+                            width: 100%;
+                            height: 100%;
+                            top: 5px;
+                            left: -5px;
+                        }
                     }
                 }
             }
@@ -140,21 +155,12 @@
             }
         }
 
-        /* Not finished yet -- will add later 
-        .blog-posts {
-            padding: 50px 0;
-            margin: 50px 0;
-            background: transparentize($palette-accent, .75);
-
-            &__container {
-                margin: 0 -12.5px;
-                display: flex;
+        .experience-posts {
+            h2 {
+                @media (max-width: 1024px) {
+                    text-align: center;
+                }
             }
-
-            .blog-card {
-                flex: 1;
-                margin: 0 12.5px;
-            }
-        } */
+        }
     }
 </style>

@@ -3,7 +3,7 @@
         <div class="row">
             <div class="social">
                 <a class="social-link" href="https://www.linkedin.com/in/jessicajarett/" rel="noreferrer" target="_blank">
-                    <img src="@/assets/images/icons/linkedin.svg" alt="LinkedIn Profile" />
+                    <img :src="linkedin" width=30 height=30 alt="LinkedIn Profile" />
                 </a>
             </div>
             <div class="copyright">
@@ -15,17 +15,25 @@
 
 <script>
     export default {
-    name: 'AppFooter'
+    name: 'AppFooter',
+    data() {
+        return {
+            linkedin: require('@/assets/images/icons/linkedin.svg')
+        }
+    },
     }
 </script>
 
 <style lang="scss"> 
     footer {
         padding: 200px 0 50px 0;
-        margin-top: 100px;
         background-image: url('../assets/images/backgrounds/footer-background.svg');
         background-size: cover;
         background-position: bottom;
         text-align: center;
+
+        @media (min-width: 1025px) {
+            margin-top: 100px;
+        }
     }
 </style>

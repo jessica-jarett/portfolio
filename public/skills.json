@@ -10,7 +10,7 @@
               "id": 2,
               "title": "Sass",
               "image": "sass.svg",
-              "description": "<p>Behind CSS, Sass is my strongest skill as a Front-End Developer. I have worked in Less at SIDEARM Sports, but Sass exclusively at Bankers Healthcare Group. I write all my projects following the popular 7-1 pattern to keep code clean and organized, and believe in variablizing and writing mixins for any code that can be used more than once. Writing Sass is my idea of a fun day at work!</p>"
+              "description": "<p>Behind CSS, Sass is my strongest skill as a Front-End Developer. I developed in Less at SIDEARM Sports, but Sass exclusively at Bankers Healthcare Group. I write all my projects following the popular 7-1 pattern to keep code clean and organized, and believe in variablizing and writing mixins for any code that can be used more than once. Writing Sass is my idea of a fun day at work!</p>"
           },
           {
               "id": 3,
@@ -22,7 +22,7 @@
               "id": 4,
               "title": "JavaScript",
               "image": "javascript.svg",
-              "description": "<p>I have worked almost exclusively in Vanilla JavaScript (no jQuery over here!) but the last 3 years. I have worked  in TypeScript in Angular projects but other than that I have used the latest JavaScript when needed.</p>"
+              "description": "<p>I have worked almost exclusively in Vanilla JavaScript, rather than jQuery/older scripting styles, for the last 3 years. I have worked  in TypeScript in Angular projects but other than that I have used the latest JavaScript when needed.</p>"
           },
           {
               "id": 5,
