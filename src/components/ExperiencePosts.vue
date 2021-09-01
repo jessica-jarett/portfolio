@@ -23,7 +23,7 @@
 </template>
 
 <script>
-    const images = require.context('@/assets/images/experience/')
+    const images = require.context('@/images/experience/')
 
     export default {
         name: 'ExperiencePosts',
@@ -65,7 +65,6 @@
         &__image {
             background-size: cover;
             background-position: center;
-            border-radius: $app-border-radius;
 
             @media (min-width: 451px) {
                 width: 246px;
@@ -73,6 +72,9 @@
             }
 
             img {
+                border-radius: $app-border-radius;
+                overflow: hidden;
+
                 @media (max-width: 450px) {
                     width: 100%;
                 }

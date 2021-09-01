@@ -38,7 +38,7 @@
 </template>
 
 <script>
-    const images = require.context('@/assets/images/experience/')
+    const images = require.context('@/images/experience/')
 
     export default {
         name: 'ExperienceDetail',

@@ -51,7 +51,7 @@
 </template>
 
 <script>
-const images = require.context('@/assets/images/skills/')
+const images = require.context('@/images/skills/')
 
     export default {
         name: 'Skills',
@@ -163,7 +163,7 @@ const images = require.context('@/assets/images/skills/')
                     width: 25px;
                     height: 25px;
                     background-size: cover;
-                    background-image: url('../assets/images/icons/close.svg');
+                    background-image: url('../images/icons/close.svg');
 
                     &:hover {
                         cursor: pointer;

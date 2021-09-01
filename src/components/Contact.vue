@@ -1,12 +1,12 @@
 <template>
   <form class="contact-form" ref="form"  @submit.prevent="sendEmail">
-    <div class="g-recaptcha" data-sitekey="6LfQly0cAAAAAJWKxvlCna72kqtTgUPUSHzLNMl5"></div>
     <div class="contact-form__container">  
         <label for="name">Name:</label>  
         <input
             type="text"
             name="name"
             id="name"
+            v-model="name"
         />
     </div>
     <div class="contact-form__container">
@@ -15,6 +15,7 @@
             type="text"
             name="email"
             id="email"
+            v-model="email"
         />
     </div>
     <div class="contact-form__container">
@@ -24,9 +25,10 @@
             type="text"
             id="message"
             name="message"
+            v-model="message"
         />
     </div>
-    <input class="button" type="submit" value="Send">
+    <input id="send" class="button" type="submit" :disabled='isDisabled' :value="send">
   </form>
 </template>
 
@@ -35,14 +37,26 @@ import emailjs from 'emailjs-com';
 
   export default {
     name: 'Contact',
+    data() {
+        return {
+            name: "",
+            email: "",
+            message: "",
+            send: 'Send',
+            isDisabled: false
+        };
+    },
     methods: {
-      sendEmail: (e) => {
-        emailjs.sendForm('service_yfzq93h', 'template_8p9mnf7', e.target, 'user_LpznQK1EU3i0qMky0v6yx')
-            .then(() => {
-                alert('Message successfully sent!');
-            }, (error) => {
-                alert('Message failed to send:' + error.text);
-            });
+      resetForm() {
+          this.name = "";
+          this.email = "";
+          this.message = "";
+          this.send = "Sent!";
+          this.isDisabled = true;
+      }, 
+      sendEmail(e) {
+        emailjs.sendForm('service_yfzq93h', 'template_8p9mnf7', e.target, 'user_LpznQK1EU3i0qMky0v6yx');
+        this.resetForm();
       }
     }, 
   };

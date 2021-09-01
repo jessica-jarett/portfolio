@@ -16,11 +16,11 @@ h3,
 h4,
 h5,
 h6 {
-    @include font-rampart();
     margin: 0 0 25px 0;
 }
 
 h1 {
+    @include font-rampart();
     font-size: 2rem;
     
     @media (min-width: 1025px) {

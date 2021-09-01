@@ -21,7 +21,7 @@
 
             <p>I also host a Front-End Developer Meetup on a bi-weekly basis. Its important to me to mentor and foster relationships with junior developers. I am always learning new things in my field by explaining and teaching others.</p>
 
-            <h2>My hobbies</h2>
+            <h2>My Hobbies</h2>
 
             <p>My favorite pasttime is hiking. I have spent a few months this last year remotely working from various locations in the Western United States and would spend my afternoons hiking in the Cascades or the Rockies. Every day after work I would find a fantastic hike within an hour’s drive and life felt like a vacation.</p>
 
@@ -35,7 +35,7 @@
         name: 'About',
         data() {
             return {
-                tree: require('@/assets/images/about/jess-tree.jpg')
+                tree: require('@/images/about/jess-tree.jpg')
             }
         },
     }
@@ -46,7 +46,6 @@
          margin: 100px 0;
 
          .image {
-             border-radius: $app-border-radius;
              position: relative;
              display: block;
 
@@ -68,13 +67,17 @@
              &::after {
                 content: '';
                 position: absolute;
-                top: -20px;
-                left: -20px;
+                top: 10px;
+                left: -15px;
                 background: transparentize($palette-accent, .75);
                 border-radius: $app-border-radius;
                 width: 100%;
                 height: 100%;
                 z-index: -1;
+            }
+
+            img {
+                border-radius: $app-border-radius;
             }
          }
      }

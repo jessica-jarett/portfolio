@@ -55,7 +55,7 @@
         },
         data() {
             return {
-                imgJess: require('@/assets/images/home/jess.png')
+                imgJess: require('@/images/home/jess.png')
             }
         }
     }

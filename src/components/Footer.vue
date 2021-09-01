@@ -18,7 +18,7 @@
     name: 'AppFooter',
     data() {
         return {
-            linkedin: require('@/assets/images/icons/linkedin.svg')
+            linkedin: require('@/images/icons/linkedin.svg')
         }
     },
     }
@@ -27,9 +27,9 @@
 <style lang="scss"> 
     footer {
         padding: 200px 0 50px 0;
-        background-image: url('../assets/images/backgrounds/footer-background.svg');
+        background-image: url('../images/backgrounds/footer-background.svg');
         background-size: cover;
-        background-position: bottom;
+        background-position: top;
         text-align: center;
 
         @media (min-width: 1025px) {

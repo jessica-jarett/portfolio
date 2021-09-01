@@ -36,7 +36,7 @@
         name: 'AppHeader',
          data() {
             return {
-                logo: require('@/assets/images/logos/logo.png')
+                logo: require('@/images/logos/logo.png')
             }
         },
         mounted: function() {
@@ -141,7 +141,7 @@
             }
 
             .hamburger {
-                background-image: url('../assets/images/icons/menu.svg');
+                background-image: url('../images/icons/menu.svg');
                 background-size: cover;
                 background-position: center;
                 width: 30px;
@@ -173,7 +173,7 @@
 
         .modal-open {
             .hamburger {
-                background-image: url('../assets/images/icons/close.svg');
+                background-image: url('../images/icons/close.svg');
                 width: 24px;
                 height: 24px;
             }
