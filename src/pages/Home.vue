@@ -7,9 +7,7 @@
                         Hi, I'm Jess, <span class="break-small break-large">Front-End Web Developer</span>
                     </h1>
 
-                    <p>Thank you for visiting my page!</p>
-
-                    <p>Here you will find some of my work examples, and a link to my Github to view the source code of this project. If you are interested in collaborating, please contact me using the form below.</p>
+                    <p>Thank you for visiting my page! This website is a way to introduce myself through my background, skillset and experience. Please contact me using the form below if you're interested in connecting.</p>
 
                     <a class="button" target="_blank" href="Resume.pdf">
                         Download Resume

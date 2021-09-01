@@ -4,11 +4,12 @@
             "id": 1,
             "title": "CSS",
             "image": "css.svg",
-            "description": "<p>My passion for web development started because of CSS. I am a CSS master, from obscure, unknown-by-most selectors, to the latest CSS3 advancements including flexbox and grid. Styling websites is where a lot of creativity comes in as a developer. It is like painting a picture for me. I write my CSS according to specificity rules that I have laid out in this <a>blog article</a>. I am always looking forward to the newest features of CSS, and am currently most looking forward to <a href='https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Masonry_Layout' rel='noreferrer' target='_blank'>masonry grid</a> support.</p>"
+            "description": "<p>My passion for web development started because of CSS. It is still today my strongest skill, from obscure, unknown-by-most selectors, to the latest CSS3 advancements including flexbox and grid. Styling websites is where a lot of creativity comes in as a developer. It is like painting a picture for me. How you write your CSS is also important, and I write mine according to specificity rules that I will soon include in a blog article. I am always looking forward to the newest features of CSS, and am currently most looking forward to <a href='https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Masonry_Layout' rel='noreferrer' target='_blank'>masonry grid</a> support.</p>"
           },
           {
               "id": 2,
               "title": "Sass",
+              "link": "https://sass-lang.com/",
               "image": "sass.svg",
               "description": "<p>Behind CSS, Sass is my strongest skill as a Front-End Developer. I developed in Less at SIDEARM Sports, but Sass exclusively at Bankers Healthcare Group. I write all my projects following the popular 7-1 pattern to keep code clean and organized, and believe in variablizing and writing mixins for any code that can be used more than once. Writing Sass is my idea of a fun day at work!</p>"
           },
@@ -21,30 +22,35 @@
           {
               "id": 4,
               "title": "JavaScript",
+              "link": "hhttps://www.javascript.com/",
               "image": "javascript.svg",
               "description": "<p>I have worked almost exclusively in Vanilla JavaScript, rather than jQuery/older scripting styles, for the last 3 years. I have worked  in TypeScript in Angular projects but other than that I have used the latest JavaScript when needed.</p>"
           },
           {
               "id": 5,
               "title": "Vue",
+              "link": "https://v3.vuejs.org/",
               "image": "vue.svg",
               "description": "<p>In the last year at Bankers Healthcare Group I developed 2 websites using Vue.js and 1 application using the Vue CLI. I have additionally created this website using the Vue CLI.</p>"
           },
           {
               "id": 6,
               "title": "Angular",
+              "link": "https://angular.io/",
               "image": "angular.svg",
               "description": "<p>I have 2 years of professional experience in Angular at Equitable (formerly AXA US) working on the myAXA application. This application was the online app that users logged into to pay their bill and apply for other products. Since then, I have stayed versed in Angular through mentoring junior developers at Bankers Healthcare Group and answering questions they have on their projects.</p>"
           },
           {
               "id": 7,
               "title": "Stencil/Web Components",
+              "link": "https://stenciljs.com/",
               "image": "stencil.svg",
               "description": "<p>I have built web components using the Stencil compiler at Bankers Healthcare Group. Web Components have grown in popularity in recent years over traditional frameworks (Vue, React, Angular), because they are cross-framework compatible, performant, and work out-of-the-box in legacy browsers.</p>"
           },
           {
               "id": 8,
               "title": "Symfony",
+              "link": "https://symfony.com/",
               "image": "symfony.svg",
               "description": "<p>Bankers Healthcare Group uses the Symfony framework for many of their public-facing websites. I have become familiar with the framework’s setup and its features, including Twig files and Routing/Controller setup.</p>"
           }
@@ -53,12 +59,14 @@
         {
             "id": 9,
             "title": "Git",
+            "link": "https://git-scm.com/", 
             "image": "git.svg",
             "description": "<p>At Bankers Healthcare Group, I work in a structured git branching workflow that allows for feature branches, bugfix branches, and development, staging, and production (main) branches. This workflow has kept all team code organized and in the right place for each release and need. I am well-versed in the git terminal commands.</p>"
         },
         {
             "id": 10,
             "title": "NPM",
+            "link": "https://www.npmjs.com/",
             "image": "npm.svg",
             "description": "<p>I have experience publishing to NPM through a private repository and setting up a feed that developers at Bankers Healthcare Group needed to connect to before installing my package. I also am responsible for setting up the dependencies, scripts, and READ.me needed through each project through yarn or npm, depending on the project’s tech stack.</p>"
         },
@@ -88,9 +96,9 @@
         },
         {
             "id": 15,
-            "title": "Agile",
+            "title": "Agile Methodology & Development",
             "image": "agile.svg",
-            "description": "<p>The first company I worked for was an early adopter of the Scrum and Agile methodologies. Because of this, I have had extensive experience by participating in Agile ceremonies throughout different organizations. I understand that not one company does Agile the same through this experience. I have worked in Kanban and Scrum, and Azure Boards and Jira.</p>" 
+            "description": "<p>The first company I worked for was an early adopter of the Agile/Scrum methodologies. Because of this, I have had extensive experience by participating in Agile ceremonies throughout different organizations. I understand that not one company does Agile the same through this experience. I have worked in Kanban and Scrum, and Azure Boards and Jira.</p>" 
         }
     ]
 }

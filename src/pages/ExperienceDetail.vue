@@ -19,7 +19,7 @@
 
                                 <div class="experience-detail__tech flex align-center">
                                     <h3>Technology used: </h3> 
-                                    <span>{{experienceDetail.technology}}</span>
+                                    <span v-html="experienceDetail.technology"></span>
                                 </div>
                             </div>
 
@@ -92,6 +92,10 @@
 
             @media (min-width: 451px) {
                 margin-right: 50px;
+            }
+
+            img {
+                border-radius: $app-border-radius;
             }
         }
 

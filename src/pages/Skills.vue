@@ -16,6 +16,8 @@
 
                         <div class="skill__title">{{skill.title}}</div>
 
+                        <a class="skill__link" v-if="skill.link" :href="skill.link" target="_blank" rel="noreferrer">Go to {{skill.title}}'s website</a>
+
                         <div class="skill__image">
                             <img v-bind:src="loadImg(skill.image)" v-bind:alt="skill.title" />
                         </div>
@@ -37,6 +39,8 @@
                         <div class="skill__modal-close" @click="e => e.target.parentElement.parentElement.classList.remove('active')"></div>
 
                         <div class="skill__title">{{skill.title}}</div>
+
+                        <a class="skill__link" v-if="skill.link" :href="skill.link" target="_blank" rel="noreferrer">Go to {{skill.title}}'s website</a>
 
                         <div class="skill__image">
                             <img v-bind:src="loadImg(skill.image)" v-bind:alt="skill.title" />
@@ -117,6 +121,12 @@ const images = require.context('@/images/skills/')
             &.active .skill__modal {
                 visibility: visible;
                 opacity: 1;
+                cursor: default;
+            }
+
+            &__link {
+                margin-bottom: 25px;
+                display: inline-block;
             }
 
             &__image {
@@ -164,9 +174,14 @@ const images = require.context('@/images/skills/')
                     height: 25px;
                     background-size: cover;
                     background-image: url('../images/icons/close.svg');
+                    transition: .25s ease-in-out;
 
                     &:hover {
                         cursor: pointer;
+
+                        @media (min-width: 451px) {
+                            transform: rotate(180deg); 
+                        }
                     }
                  }
 

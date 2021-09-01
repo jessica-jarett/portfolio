@@ -12,9 +12,7 @@
                     <div class="experience-post__tag">{{experience.tag}}</div>
                 </div>
 
-                <div class="experience-post__description">
-                    {{experience.description}}
-                </div>
+                <div class="experience-post__description" v-html="experience.description"></div>
 
                 <router-link class="button experience-post__link" :to="'/featured-experience/' + experience.slug">Read more</router-link>
             </div>
