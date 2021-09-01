@@ -7,30 +7,39 @@
             name="name"
             id="name"
             v-model="name"
+            required="true" 
+            placeholder="Your full name" 
+            data-value-missing="Please enter your name" 
         />
     </div>
     <div class="contact-form__container">
         <label for="email">Email:</label>  
         <input
-            type="text"
+            type="email" 
             name="email"
             id="email"
             v-model="email"
+            required="true" 
+            placeholder="email@gmail.com" 
+            data-value-missing="Please enter your email address" 
+            data-value-invalid="Oops! That looks like an invalid email address." 
         />
     </div>
     <div class="contact-form__container">
         <label for="message">Message:</label>
         <textarea
-            label="Message"
             type="text"
             id="message"
             name="message"
             v-model="message"
+            required="true" 
+            placeholder="Hi Jess, I was looking at your website and ..."
+            data-value-missing="Please enter a message" 
         />
     </div>
     <input id="send" class="button" type="submit" :disabled='isDisabled' :value="send">
   </form>
-</template>
+</template>  
 
 <script>  
 import emailjs from 'emailjs-com';

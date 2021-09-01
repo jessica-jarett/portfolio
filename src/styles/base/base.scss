@@ -6,6 +6,8 @@ html {
     line-height: 1.5;
     color: $palette-dark;
     scroll-behavior: smooth;
+    max-width: 2000px;
+    margin: auto;
 }
 
 body {

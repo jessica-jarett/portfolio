@@ -43,7 +43,7 @@
 
 <style lang="scss"> 
      .about-page {
-         margin: 100px 0;
+         margin: 100px 0 50px 0;
 
          .image {
              position: relative;

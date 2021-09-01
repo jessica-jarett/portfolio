@@ -65,7 +65,7 @@
 
 <style lang="scss"> 
     .experience-detail {
-        margin: 100px 0;
+        margin: 100px 0 0 0;
 
         &__top {
             display: flex;
@@ -108,7 +108,7 @@
 
                 @media (min-width: 451px) {
                     margin-right: 12.5px;
-                    margin-top: -7px;
+                    margin-bottom: 0;
                 }
             }
 

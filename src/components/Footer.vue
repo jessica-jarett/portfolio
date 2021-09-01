@@ -31,9 +31,5 @@
         background-size: cover;
         background-position: top;
         text-align: center;
-
-        @media (min-width: 1025px) {
-            margin-top: 100px;
-        }
     }
 </style>

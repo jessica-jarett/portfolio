@@ -78,7 +78,7 @@ const images = require.context('@/images/skills/')
 
 <style lang="scss"> 
      .skills-page {
-         margin: 100px 0;
+         margin: 100px 0 0 0;
 
          .flex {
             margin: -12.5px;
